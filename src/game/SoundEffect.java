@@ -13,15 +13,16 @@ import javax.sound.sampled.*;
  */
 public enum SoundEffect {
 
-	THEME("theme.wav"),
-	FRUIT("fruit.wav"),
-	DEATH("death.wav"),
-	SHOOT("shoot.wav"),
-	POP("pop.wav"),
-	BUBBLED("bubbled.wav"),
-	JUMP("jump.wav"),
-	EXPLODE("explode.wav"),
-	LAND("land.wav");
+	// https://stackoverflow.com/questions/9491144/eclipse-project-can-not-reference-a-file-using-relative-paths
+	THEME("sfx/theme.wav"),
+	FRUIT("sfx/fruit.wav"),
+	DEATH("sfx/death.wav"),
+	SHOOT("sfx/shoot.wav"),
+	POP("sfx/pop.wav"),
+	BUBBLED("sfx/bubbled.wav"),
+	JUMP("sfx/jump.wav"),
+	EXPLODE("sfx/explode.wav"),
+	LAND("sfx/land.wav");
 	
 	public static enum Volume {
 		MUTE, LOW, MEDIUM, HIGH

@@ -197,10 +197,10 @@ public class InteractableWorld extends JComponent {
 	
 	private void nextLevel() {
 		//sets and loads next level
-		if (loader.constructLevel("Level" + (currentLevel + 1) + ".txt")) {
+		if (loader.constructLevel("levels/Level" + (currentLevel + 1) + ".txt")) {
 			currentLevel += 1;
 		} else {
-			loader.constructLevel("Level1.txt");
+			loader.constructLevel("levels/Level1.txt");
 			currentLevel = 1;
 		}
 		timer = 180;
@@ -262,7 +262,7 @@ public class InteractableWorld extends JComponent {
 		getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_U, 0, false), "Go up one level");
 		getActionMap().put("Go up one level", new AbstractAction() {
 			public void actionPerformed(ActionEvent arg0) {
-				if (loader.constructLevel("Level" + (currentLevel + 1) + ".txt")) {
+				if (loader.constructLevel("levels/Level" + (currentLevel + 1) + ".txt")) {
 					currentLevel += 1;
 				}
 			}
@@ -270,7 +270,7 @@ public class InteractableWorld extends JComponent {
 		getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_D, 0, false), "Go down one level");
 		getActionMap().put("Go down one level", new AbstractAction() {
 			public void actionPerformed(ActionEvent arg0) {
-				if (loader.constructLevel("Level" + (currentLevel - 1) + ".txt")) {
+				if (loader.constructLevel("levels/Level" + (currentLevel - 1) + ".txt")) {
 					currentLevel -= 1;
 				}
 			}
@@ -286,7 +286,7 @@ public class InteractableWorld extends JComponent {
 	
 	private void resetLevel() {
 		//resets level
-		loader.constructLevel("Level" + currentLevel + ".txt");
+		loader.constructLevel("levels/Level" + currentLevel + ".txt");
 		readyToReset = false;
 		
 	}
@@ -319,7 +319,7 @@ public class InteractableWorld extends JComponent {
 	
 	void startGame() {
 		//loads everything needed to start game, including initial values
-		loader.constructLevel("Level1.txt");
+		loader.constructLevel("levels/Level1.txt");
 		currentLevel = 1;
 		lives = 5;
 		points = 0;
