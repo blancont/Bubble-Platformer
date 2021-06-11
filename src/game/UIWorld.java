@@ -46,8 +46,8 @@ public class UIWorld extends JComponent {
 		addScoreTimer = 30;
 		this.world = world;
 		c = new GridBagConstraints();
-		setSize(width / 3, height);
-		setPreferredSize(new Dimension(width / 3, height));
+		setSize(width / 2, height);
+		setPreferredSize(new Dimension(width / 2, height));
 		setLayout(new GridBagLayout());
 		c.anchor = GridBagConstraints.NORTH;
 		c.insets = new Insets(0, 0, 10, 0);

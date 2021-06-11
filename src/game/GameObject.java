@@ -32,8 +32,8 @@ public abstract class GameObject {
 	public GameObject(InteractableWorld world, int colNum, int rowNum, int width, int height) {
 		
 		this.world = world;
-		x = colNum * 25;
-		y = rowNum * 25;
+		x = colNum * Main.UNIT_SIZE;
+		y = rowNum * Main.UNIT_SIZE;
 		this.width = width;
 		this.height = height;
 		

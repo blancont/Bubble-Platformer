@@ -19,8 +19,8 @@ import units.AbstractUnit;
  */
 public class Mook extends Avatar {
 
-	private static final int WIDTH = 35;
-	private static final int HEIGHT = 35;
+	private static final int WIDTH = Main.UNIT_SIZE + 10;
+	private static final int HEIGHT = Main.UNIT_SIZE + 10;
 	private static final int JUMP_SPEED = 20;
 	private static final int TERMINAL_VELOCITY_X = 4;
 	private static final int BUBBLED_FRAMES = 300;
